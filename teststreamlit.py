@@ -17,7 +17,7 @@ def improve_prompt(input_text):
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {"role": "system", "content": "あなたはAIツールの使用に関する専門家です。ユーザーの入力を元に、より効果的で具体的なプロンプトを生成してください。"},
+                {"role": "system", "content": "あなたはAIプロンプトエンジニアリングの専門家です。ユーザーの入力を元に、より効果的で具体的な結果を得られるようなプロンプトを生成してください。"},
                 {"role": "user", "content": f"次の目的のためのより良いプロンプトを作成してください: {input_text}"}
             ]
         )
